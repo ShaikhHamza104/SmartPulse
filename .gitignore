@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+dist
+
+# Text files
+.instractions.txt
+.requirements.txt
+
+# Analysis reports
+.COMPLETE_ANALYSIS.md
+.ANALYSIS_REPORT.md
+
+# Scripts
+.clean_and_engineer.py
+.create_eda_file.py
