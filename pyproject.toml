@@ -5,16 +5,22 @@ description = " Intelligent Mobile Phone Data Collection & Analytics Platform"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "beautifulsoup4>=4.14.2",
-    "ipykernel>=7.1.0",
-    "nbformat>=4.2.0",
+    "numpy>=1.24.0", # core numeric lib
     "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+    "xgboost==3.1.1", # avoid XGBoost 2.x base_score format break for some SHAP versions
+    "shap>=0.41.0,<0.46.0", # stable with older XGBoost; or use shap.Explainer with newer SHAP
+    "matplotlib>=3.7.1",
+    "seaborn>=0.13.2",
     "plotly>=6.4.0",
     "plotly-express>=0.4.1",
-    "pycparser>=2.23",
     "requests>=2.32.5",
-    "scikit-learn>=1.7.2",
-    "seaborn>=0.13.2",
+    "beautifulsoup4>=4.14.2",
+    "pycparser>=2.23",
+    "ipykernel>=7.1.0",
+    "nbformat>=4.2.0",
     "selenium>=4.38.0",
     "webdriver-manager>=4.0.2",
+    "joblib>=1.5.2",
+    "flask>=3.1.2",
 ]

@@ -21,3 +21,5 @@ dist
 # Scripts
 .clean_and_engineer.py
 .create_eda_file.py
+.ml.ipynb 
+.test_modeling.py

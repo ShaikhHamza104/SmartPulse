@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>📱 Mobile Price Predictor</title>
+  <style>
+    body { font-family: Arial; background: #f9fafc; text-align: center; }
+    form { display: inline-block; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 0 10px #ccc; }
+    input, select { width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc; }
+    button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>📱 Mobile Price Predictor</h2>
+  <form action="/predict" method="post">
+    <input type="text" name="brand" placeholder="Brand (e.g. Samsung)" required>
+    <input type="text" name="name" placeholder="Model Name" required>
+    <input type="text" name="processor" placeholder="Processor" required>
+    <input type="number" step="0.1" name="ram_gb" placeholder="RAM (GB)" required>
+    <input type="number" step="0.1" name="storage_gb" placeholder="Storage (GB)" required>
+    <input type="number" step="0.1" name="rear_camera_mp" placeholder="Rear Camera MP" required>
+    <input type="number" step="0.1" name="front_camera_mp" placeholder="Front Camera MP" required>
+    <select name="battery_category" required>
+      <option value="">Select Battery</option>
+      <option value="large">Large</option>
+      <option value="medium">Medium</option>
+      <option value="small">Small</option>
+    </select>
+    <input type="number" step="0.1" name="feature_score" placeholder="Feature Score (1-10)" required>
+    <button type="submit">Predict</button>
+  </form>
+
+  {% if prediction_text %}
+  <h3 style="margin-top:20px;">{{ prediction_text }}</h3>
+  {% endif %}
+</body>
+</html>
