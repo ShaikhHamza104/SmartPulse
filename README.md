@@ -1,15 +1,24 @@
 # 📱 SmartPulse
 ## *Intelligent Mobile Phone Data Collection & Analytics Platform*
+---
 
 <div align="center">
-
-![SmartPulse](https://img.shields.io/badge/SmartPulse-v1.0-blue?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.11+-green?style=for-the-badge&logo=python)
-![License](https://img.shields.io/badge/License-MIT-red?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active%20Development-yellow?style=for-the-badge)
-
+<p align="center">
+  <a href="https://github.com/ShaikhHamza104/SmartPulse">
+    <img src="https://img.shields.io/badge/Project-SmartPulse-blue?style=for-the-badge&logo=github" alt="SmartPulse">
+  </a>
+  <a href="https://www.python.org/downloads/release/python-3110/">
+    <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" alt="Python">
+  </a>
+  <a href="https://opensource.org/license/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+  </a>
+  <a href="https://hub.docker.com/r/104hamza/smartpulse">
+    <img src="https://hub.docker.com/repositories/104hamza" alt="Docker Image">
+  </a>
+  <img src="https://img.shields.io/badge/Status-Active%20Development-yellow?style=for-the-badge" alt="Status">
+</p>
 **Scrape • Analyze • Predict • Discover**
-
 </div>
 
 ---
@@ -48,15 +57,29 @@
 - **Chrome Browser** (for Selenium)
 - **pip** or **conda**
 
-### Installation
+### 📦 Installation Guide
 
+- 1. Using repository
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/phoneflow.git
+git clone https://github.com/ShaikhHamza104/SmartPulse.git
 cd phoneflow
+```
 
-# Install dependencies (using uv)
+### Install dependencies (using uv)
+```Code
 uv sync
+```
+
+### Install dependencies (using pip)
+```Code
+pip Install -r requirements.txt
+```
+### 🐳 Option 2 — Run with Docker
+## No setup needed. Just pull and run:
+```Code
+docker pull 104hamza/smartpulse:v1
+docker run -p 8000:8000 104hamza/smartpulse:v1
 ```
 
 ### Basic Usage
@@ -191,35 +214,9 @@ We ❤️ contributions! Here's how you can help:
 2. **Describe the feature** and its benefits
 3. **Suggest implementation** approach
 
-### 🔧 Want to Code?
-```bash
-# 1. Fork the repository
-# 2. Create feature branch
-git checkout -b feature/amazing-feature
+# 📘 Contribution Guide
 
-# 3. Make your changes & commit
-git commit -m "✨ Add amazing feature"
-
-# 4. Push to your fork
-git push origin feature/amazing-feature
-
-# 5. Open Pull Request with:
-#    - Clear description
-#    - Related issue number
-#    - Testing done
-```
-
-### Contribution Ideas 🎯
-- [ ] Add more source websites (Flipkart, Amazon)
-- [ ] Implement price prediction model
-- [ ] Create REST API
-- [ ] Add database support (MongoDB, PostgreSQL)
-- [ ] Build web dashboard
-- [ ] Add support for multiple regions
-- [ ] Improve scraper performance
-- [ ] Add comprehensive test suite
-
----
+See [CONTRIBUTE.md](./CONTRIBUTE.md)
 
 ## 🎯 Roadmap
 
@@ -233,11 +230,11 @@ git push origin feature/amazing-feature
 - 🔄 Price prediction model
 - 🔄 Trend analysis
 - 🔄 Market insights
-- 🔄 Advanced visualizations
+- 🔄 Advanced visualizations (Using tableau)
 
 ### 🌐 Phase 3: Expansion (Q2 2026)
 - 📋 Multi-source support
-- 📋 REST API
+- 📋 REST API (Using Flask Or FastAPI)
 - 📋 Web dashboard
 - 📋 Mobile app
 
@@ -325,7 +322,7 @@ copy, modify, merge, publish, distribute it freely, with attribution.
 
 - 🙏 SmartPrix for providing data
 - 💪 Open-source community
-- 🤝 All contributors and supporters    
+- 🤝 All contributors and supporters
 - 📚 Selenium & BeautifulSoup teams
 
 ---
